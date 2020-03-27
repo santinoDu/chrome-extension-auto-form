@@ -1,0 +1,70 @@
+.clearfix::after{
+  content: '';
+  display: table;
+  height: 0;
+  clear: both;
+}
+
+.container{
+  padding: 20px;
+  width: 450px;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.form-item{
+  margin-bottom: 10px;
+}
+
+.form-item span{
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+.form-item img{
+  width: 16px;
+  height: 16px;
+}
+
+.form-item .content{
+  width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.operator{
+  text-align: center;
+}
+
+.operator span{
+  display: inline-block;
+  margin: 0 10px;
+  padding: 4px 15px;
+  border-radius: 5px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: rgb(24, 144, 255);
+  cursor: pointer;
+}
+
+.operator span:active,
+.operator span:hover{
+  background-color: rgb(64, 169, 255);
+}
+
+#tips{
+  display: none;
+  margin-left: 10px;
+  color: #f00;
+}
+
+#fill_btn{
+  display: none;
+}
+
+.form-item .j_delete{
+  margin-right: 10px;
+  float: right;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Auto Form",
+  "version": "1.0",
+  "description": "save time",
+  "permissions": ["tabs", "activeTab", "storage"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/flash_auto16.png",
+      "32": "images/flash_auto32.png",
+      "48": "images/flash_auto48.png",
+      "128": "images/flash_auto128.png"
+    }
+  },
+  "icons": {
+    "16": "images/flash_auto16.png",
+    "32": "images/flash_auto32.png",
+    "48": "images/flash_auto48.png",
+    "128": "images/flash_auto128.png"
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [ "js/content_scripts.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*" ]
+    }
+  ],
+  "manifest_version": 2
+}
